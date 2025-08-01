@@ -1,0 +1,288 @@
+body
+{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(270deg, #91d8a4, #d1e16d, #159795, #87ddf488);
+    background-size: 600% 600%;
+    animation: gradientMove 10s ease infinite;
+    
+}
+.gradient2
+{
+    background: linear-gradient(270deg, #434544, #5f5d63, #0f1010, #1c2122);
+    background-size: 600% 600%;
+    animation: gradientMove 10s ease infinite;
+    color:rgb(247, 242, 242);
+}
+.gradient2 select
+{
+    color:rgb(239, 234, 234);
+}
+.gradient2 select option
+{
+    color:rgb(10, 4, 4);
+}
+.gradient2 footer
+{
+    background-color:rgb(39, 38, 38);
+
+}
+@keyframes gradientMove
+{
+    0%
+    {
+        background-position:0% 50%;
+    }
+    50%
+    {
+        background-position:100% 50%;
+
+    }
+    100%
+    {
+        background-position:0% 50%;
+    }
+}
+header
+{
+    height:15vh;
+    width:100%;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    font-size:larger;
+    padding-top:1rem;
+    
+    gap:40rem;
+}
+.toggle
+{
+    all:unset;
+    height:7vh;
+    width:10rem;
+    border-radius:0.5rem;
+    box-shadow:1px 1px 20px rgb(13, 51, 154);
+    text-align:center;
+    font-size:larger;
+    background-color:transparent;
+    transition:all 0.3s ease;
+    
+}
+main
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    height:90%;
+    width:100%;
+
+}
+.Clock
+{
+    height:25vh;
+    box-shadow:1px 1px 30px rgb(10, 109, 32);
+    border-radius:0.5rem;
+    width:30vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:3rem;
+    margin-top:1rem;
+}
+
+.set-alarm
+{
+    height:60vh;
+    width:23vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:0.3rem;
+    flex-direction:column;
+    flex-wrap:wrap; 
+}
+.set-heading
+{
+    padding-right:1rem;
+    font-size:larger;   
+}
+.setBtn
+{
+    all:unset;
+    height:7vh;
+    width:10rem;
+    border-radius:0.5rem;
+    margin-top:1rem;
+    box-shadow:1px 1px 20px rgb(13, 51, 154);
+    text-align:center;
+    font-size:larger;
+    background-color:transparent;
+    transition:all 0.3s ease;
+}
+.setBtn:hover,.toggle:hover
+{
+    color:rgb(17, 182, 188);
+    background-color:#682161;
+}
+.setBtn:active,.toggle:active
+{
+    transform:scale(1.1);
+
+}
+
+select option
+{
+    all:unset;
+    height:2.5rem;
+    width:4rem; 
+}
+
+select
+{  
+    text-align:center;
+    background-color:transparent;
+    box-shadow:1px 1px 20px rgb(13, 51, 154);
+    height:2.5rem;
+    width:4rem; 
+    font-size:larger;
+}
+footer
+{
+    height:12rem;
+    color:white;
+    background-color:rgb(13, 158, 83);
+    width:100%;
+    text-align:center;
+    margin-top:2rem;
+    padding-top:3rem;
+}
+
+@media (max-width:1074px)
+{
+    header
+    {
+       width:17rem;
+       height:20rem;
+       flex-direction:column;
+       gap:0.3rem;
+       
+    }
+    
+}
+
+@media (max-width:1190px)
+{
+    .set-alarm
+    {
+        flex-direction:row;
+        flex-wrap:wrap;
+        width:80%;
+
+    }
+
+    .set-content
+    {   
+        height:10rem;
+        width:12%;    
+    }
+    .set-btn-block
+    {
+        height:10rem;
+        width:50%;
+        text-align:center;
+        padding-top:2rem;   
+    }
+
+}
+@media (max-width:570px)
+{
+    .set-btn-block
+    {
+        padding-top:2rem;
+    }
+}
+
+@media (max-width:650px)
+{
+    .Clock
+    {
+        width:80%;
+        height:15rem;
+    }
+
+}
+@media (max-width:1894px)
+{
+    .set-alarm
+    {
+        gap:1rem;
+    }
+}
+@media (max-width:520px)
+{
+    body 
+    {
+       flex-direction:column;
+    }
+    header
+    {
+        flex-direction:column;
+        width:2rem;
+        
+    }
+    .set-alarm
+    {
+        margin-left:2.5rem;
+        gap:1rem;
+        width:20rem;
+        flex-direction:column;
+        height:30rem;
+    }
+    main 
+    {
+        flex-direction:column;
+    }
+    .set-content
+    {
+        width:6rem;
+    }
+
+}
+.alarm-item
+{
+    height:5rem;
+    width:80vw; 
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    font-size:x-large;
+}
+.stop,
+.delete
+{
+    all:unset;
+    height:2rem;
+    border-radius:0.5rem;
+    color:rgb(215, 209, 209);
+    background-color:rgba(10, 8, 8, 0.918);
+    width:6rem;
+    text-align:center;
+    box-shadow:1px 1px 20px rgb(189, 189, 227); 
+      
+}
+.stop
+{
+    background-color:red;
+}
+.alarm-tone
+{
+    width:10rem;
+    text-align:center;
+}
+.delete:active,.stop:active
+{
+    transform:scale(1.1);
+}
