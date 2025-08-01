@@ -1,4 +1,4 @@
-/* *
+ *
 {
     box-sizing:border-box;
     margin:0;
@@ -54,24 +54,10 @@ body
         
         
     }
-} */
+} 
 
 
-/* search bar */
-body
-{
-     height:100vh;
-     display:flex;
-     justify-content:center;
-     align-items:center;
-}
-h1
-{
-    height:3vmin;
-    width:20ch;
-    transition:transform 3s steps(20) 6s alternate-reverse;
-    color:green;
-}
+
 @keyframes transform
 {
     0%
